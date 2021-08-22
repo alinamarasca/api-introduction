@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <title>API sandbox</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="display-4 mb-4">Fetch API Sandbox</h1>
+      <div class="d-flex">
+        <button class="bt btn-primary mr-4" id="getText">Get Text</button>
+        <button class="bt btn-success mr-4" id="getUsers">Get JSON</button>
+        <button class="bt btn-warning mr-4" id="getPosts">Get API data</button>
+      </div>
+      <hr />
+      <div id="output" class="mb-4"></div>
+      <form id="addPost">
+        <div class="form-group">
+          <input type="text" id="title" placeholder="Title" />
+        </div>
+        <div class="form-group">
+          <textarea
+            class="form-control"
+            type="text"
+            id="body"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <input class="btn btn-secondary" type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
